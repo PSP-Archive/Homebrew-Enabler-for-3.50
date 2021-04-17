@@ -1,0 +1,45 @@
+- Revision A (22 september 2006):
+
+  * Initial release
+
+- Revision B (24 september 2006):
+
+  * Some kernel prx's didn't load because the kernel tried to load them to user partition. 
+    This problem affected devhook.prx and some other kernel prx's.
+    This problem has been fixed.
+
+- Revision B with better binary loader in the tiff (25 september)
+   
+  * Changed the binary loader to use the one from tiffsdk 1.1 that has better stability.
+    No changes on the core.
+
+- Revision C (29 september 2006):
+
+  * User mode static ELF's are now starting to work.
+    Tested with SNES TYL 0.3 (user mode version), PSPMaster and  CPS2PSP 1.0 (user mode version).
+    Kernel mode static elf's are still not supported, they are a very odd case in 1.XX of kernel
+    code loaded to user memory. 
+    Kernel Homebrew for 2.71 has to be written with a user main elf/prx that load kernel prx's.
+    Note that the homebrew must be in a true pbp, not kxploited!.
+
+  * User mode prx's could load other user mode prx's, but kernel mode prx's couldn't load user mode
+    prx's. 
+    This is fixed.
+
+  * Patched the firmware to allow it to understand the old SFO format. 
+    (avoiding the error of data is corrupted)
+
+  * Added a small win32 binary that will give you a hint about if a homebrew can work or not in 
+    the current release. Note that this is only a hint.
+    
+- 2.80 Initial Release (14 January 2007)
+ 
+  * Ported to 2.80 by noobz with code provided by Dark_Alex
+
+- 3.03 Initial Release (28 January 2007)
+
+  * Ported to 3.03 by noobz with code provided by Dark_Alex
+
+- 3.50 Initial Release (25 June 2007)
+
+  * Ported to 3.50 by noobz with code provided by Dark_Alex

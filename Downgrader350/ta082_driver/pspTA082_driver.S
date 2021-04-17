@@ -1,0 +1,9 @@
+	.set noreorder
+
+#include "pspstub.s"
+
+	STUB_START "pspTA082_driver",0x40090000,0x00030005
+	STUB_FUNC  0xA3AA934D,pspTA082ChangeIdStorage
+	STUB_FUNC  0xA27C7966,pspTA082IsTA082
+	STUB_FUNC  0xF64F1256,pspTA082IsDowngraded
+	STUB_END

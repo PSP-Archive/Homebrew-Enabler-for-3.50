@@ -1,0 +1,114 @@
+303 HEN Noobz Downgrader Guide
+------------------------------
+
+Here is a guide for downgrading any current PSP hardware version
+(TA-079 - TA-086) from firmware 3.10-3.50 to 1.50.
+
+VERY IMPORTANT:
+  If you have a TA082+ motherboard and you downgrade to 1.50,
+  currently you will be unable to upgrade to 3.30+ Sony firmware.
+  This is due to Sony blocking updates when the PSP has been
+  modified to run 1.50. There will be an application released
+  later which will allow users to revert the changes. If you
+  are using a TA082 motherboard then I would suggest just using
+  1.50 or OE until an application is released.
+
+IMPORTANT:
+  The Noobz team is strongly against piracy, and we're not just
+  saying that to cover our butts. When you pirate games, you're
+  removing the incentive for game and console makers to continue
+  making fun things for us to play with. We are releasing this
+  downgrader because we believe that using your PSP to its full
+  potential and being able to customize it and run homebrew code
+  is a fair use right that should be available to everyone.
+  Please purchase games that you intend to play. Thanks!
+
+Requirements
+------------
+In order to downgrade a 3.50 PSP you will need the following:
+
+ - Lumines (EU or US version only currently)
+
+ - 3.50 Downgrader (this package)
+	http://www.noobz.eu/joomla/index.php?option=com_remository&Itemid=88888895&func=fileinfo&id=12
+
+ - 1.50 Update
+	http://dl.qj.net/PSP-Firmware-1.50-File-(EBOOT)-North-America-PSP/pg/12/fid/163/catid/163
+
+ - 3.50 Update if you are on firmware 3.10-3.40
+	http://dl.qj.net/PSP-Firmware-3.50-(North-America)-PSP/pg/12/fid/13840/catid/163
+
+  ******************************************************************
+  * WARNING, ANY DOWNGRADER HAS A CHANCE OF BRICKING A PSP. WHEN A *
+  * PSP IS BRICKED YOU WILL NOT BE ABLE TO USE IT ANYMORE. WE HAVE *
+  * DONE A LOT TO TRY AND MINIMISE THE RISK, BUT THERE IS ALWAYS   *
+  * SOME LEVEL OF RISK WHICH YOU MUST ACCEPT IF YOU WANT TO        *
+  * DOWNGRADE                                                      *
+  ******************************************************************
+
+Instructions
+------------
+Here are the steps to downgrade any 3.50 PSP to 1.50:
+
+1  - If you have a 3.50 PSP skip to step 6
+
+2  - Download 3.50 update from here:
+	http://dl.qj.net/PSP-Firmware-3.50-(North-America)-PSP/pg/12/fid/13840/catid/163
+
+3  - Unzip and place the file in <pspdrive>:/PSP/GAME/UPDATE
+
+4  - On the PSP, run the 3.50 update from the memory stick under the Game menu.
+
+5  - Delete <pspdrive>:/PSP/GAME/UPDATE
+
+6  - Copy the contents of the folder MS_ROOT from the 3.50 downgrader ZIP to
+     the memory stick
+
+7  - Unzip the 1.50 update to a temporary folder. Rename the EBOOT.PBP to
+     UPDATE.PBP and copy it to <pspdrive>:/PSP/GAME/UPDATE/ .   DO NOT
+     OVERWRITE PSP/GAME/UPDATE/EBOOT.PBP!
+
+8  - Load Lumines and press x to start the game
+
+9  - The screen will clear to black and fill with a light blue colour, then
+     the PSP will reset itself
+
+10 - Check that HEN is running by going to system settings, then to
+     "System Information" and it should show up as system version
+     350 HEN
+
+11 - If it is showing up as HEN then go to the memory stick and
+     run the x.yz update
+
+12 - If you have an unpatched TA-082 or higher motherboard, you will be
+     prompted to allow the downgrader to patch your motherboard so it
+     can be safely downgraded.  The downgrader will not let you proceed
+     without patching, if your motherboard requires it.
+
+13 - Before the downgrader does anything to your PSP it will ask
+     for you to agree to what it is doing, if you no longer want to
+     continue press the Right Shoulder Button (R-TRIGGER).
+
+14 - Once you have agreed to start the downgrade do not unplug the
+     PSP, or try and restart it
+
+15 - Once finished the PSP will ask you to press X, and reset itself
+
+16 - If it comes up saying that the settings are corrupt, press x
+     to continue, this will mean you will need to re-enter the
+     settings for network connections into your PSP, otherwise go to
+     step 18
+
+17 - Load the included NetConfigBackup application in your PSP, and select to
+     restore, this will take the backup that was done of the network config
+     that was done automatically during the downgrade.
+
+18 - All done now :-)  Hopefully you now have a 1.50 PSP.  Enjoy it responsibly.
+
+
+Troubleshooting
+---------------
+- If when trying to restore the network config using netconf backup you
+  find that it gives you an error on the downgraded 1.50 PSP, try adding
+  a temporary network config, then deleting it and run the netconf backup
+  again.
